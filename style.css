@@ -1,0 +1,157 @@
+body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url('./images/pattern-background-desktop.svg');   /* imagem de fundo */
+    background-repeat: no-repeat;           /* não repetir a imagem */
+    background-size: contain;               /* ajusta a imagem (ou 'cover') */
+    background-attachment: fixed;           /* fixa a imagem */
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+p { 
+    margin: 0px;
+    padding: 0px;
+}
+
+.content {
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 98%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.img-topo {
+    width: 400px; 
+    border-radius: 10px 10px 0px 0px;
+}
+
+h1 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.content-p { 
+    margin: 0px 40px 0px 40px;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+button { 
+    background-color: hsl(225, 100%, 97%);
+    border: none;
+    margin: 0px 50px 0px 50px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button a {
+    color: hsl(245, 75%, 52%);
+}
+
+.content-button {
+    display: flex;
+    align-items: center;
+    justify-items: start;
+    border-radius: 8px;
+    padding: 12px 0px 12px 0px;
+}
+
+button p { 
+    margin: 0px 20px 0px 20px;
+    font-weight: 750;
+    color: hsl(223, 47%, 23%);
+}
+
+span {
+    display: block;
+    margin-top: 5px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.botao {
+    background-color:hsl(245, 75%, 52%);
+    padding: 12px 0px 12px 0px;
+    color: white;
+    display: flex;
+    align-items: center;     /* alinha verticalmente */
+    justify-content: center;
+    box-shadow: 0px 15px 20px rgba(91, 66, 217, 0.3);
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: hsl(223, 47%, 23%);
+}
+
+a {
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    font-size: 0.85em;
+    cursor: pointer;
+}
+
+a:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+
+@media (max-width: 375px) {
+    body {
+        background-image: url('./images/pattern-background-mobile.svg');   /* imagem de fundo */
+        background-repeat: no-repeat;           /* não repetir a imagem */
+        background-size: contain;               /* ajusta a imagem (ou 'cover') */
+        background-attachment: fixed;           /* fixa a imagem */   
+    }
+
+    .content {
+        width: 340px;
+        height: 530px;
+    }
+
+    .img-topo {
+        width: 340px; 
+    }
+
+    h1 {
+        font-size: 1.50em;
+    }
+
+    button { 
+        padding: 0px 10px 0px 10px;
+        margin: 0px 30px 0px 30px;
+    }
+
+    .icon-music {
+        width: 38px;
+        height: 38px;
+    }
+
+    .botao {
+    font-size: 0.9em;
+    font-weight: 600;
+    padding: 15px 0px 15px 0px;
+    }
+
+
+}
